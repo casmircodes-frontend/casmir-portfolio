@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="Professional Front-End Portfolio showcasing modern web development skills, projects, and experience">
+    <meta name="author" content="Casmir Okeke">
+    <title>Casmir Okeke | Web Designer & Front-End Developer</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div id="preloader">
+        <img src="image/logo.png" alt="Casmir Logo" class="preloader-logo">
+        <div class="dots"><span></span><span></span><span></span></div>
+    </div>
+
+    <header class="main" id="home">
+        <nav class="navbar">
+            <img src="image/logo.png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div style="display: flex; align-items: center;">
+                <button class="theme-toggle" id="darkModeToggle" aria-label="Light/Dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="info" data-aos="fade-right">
+                <div class="hero-badge"><i class="fas fa-code"></i> Available for freelance</div>
+                <h1>Hi, I'm <span>Casmir</span>.</h1>
+                <h2><span>F</span>RONT- <span>E</span>ND <span>D</span>EVELOPER</h2>
+                <h3> I create websites to help businesses grow online.
+                    <br>Crafting beautiful, responsive, and high-performance web experiences that captivate users and
+                    drive results.
+                    <br>Passionate about bringing ideas into existence through code.
+                </h3>
+                <a href="files/CASMIR OKEKE.pdf" download="Casmir-Okeke-CV.pdf" class="btn download-btn"
+                    id="downloadCvBtn"><i class="fas fa-download"></i> Download CV</a>
+                <a href="https://wa.me/2348163513869" class="btn hire-btn" target="_blank"><i
+                        class="fab fa-whatsapp"></i> HIRE ME</a>
+            </div>
+            <div class="image" data-aos="fade-left">
+                <img src="image/profile.jpg" alt="Profile" class="profile">
+            </div>
+        </div>
+        <div class="icons" data-aos="zoom-in">
+            <a href="https://instagram.com/casmircodes" target="_blank" aria-label="Instagram"><ion-icon
+                    name="logo-instagram"></ion-icon></a>
+            <a href="https://www.facebook.com/casmir.okeke.920493" target="_blank" aria-label="Facebook"><ion-icon
+                    name="logo-facebook"></ion-icon></a>
+            <a href="https://www.youtube.com/@Casmircodes" target="_blank" aria-label="YouTube"><ion-icon
+                    name="logo-youtube"></ion-icon></a>
+            <a href="https://www.tiktok.com/@casmircodes" target="_blank" aria-label="TikTok"><ion-icon
+                    name="logo-tiktok"></ion-icon></a>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <h3>I'm <span>C</span>asmir<span> D</span>ev</h3>
+                <p>I am a passionate front-end developer with expertise in creating modern,dynamic and responsive
+                    websites tailored
+                    to client needs. I blend aesthetics with functionality to deliver exceptional digital experiences.
+                </p>
+                <p>My journey in web development started with a curiosity for how things work on the internet, and it
+                    has evolved into a full-fledged career where I help businesses establish their online presence and
+                    achieve their digital goals.
+                </p>
+                <div class="stats">
+                    <!-- <div class="stat">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div> -->
+                    <div class="stat">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <!-- <div class="stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="about-image" data-aos="fade-left"><img src="image/profile.jpg" alt="About Visual"></div>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="zoom-in"><i class="fab fa-html5" style="color:#e34c26;"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-css3-alt"
+                    style="color:#1572b6;"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-js"
+                    style="color:#f7df1e;"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-mobile"
+                    style="color:#563d7c;"></i>
+                <h3>Responsive Design</h3>
+
+            </div>
+
+            <!-- ADD MORE SKILLS WHEN YOU PROGRESS AND LEARN MORE -->
+    </section>
+
+    <section class="section" id="projects">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+
+
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="flip-right">
+                <div class="project-image">
+                    <img src="image/Screenshot 2026-04-08 132712.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Responsive Layout</h3>
+                    <p>Designed a responsive layout for skills upgrade online site.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JS</span>
+                    </div>
+
+                    <div class="project-badge">
+                       📱 100% mobile friendly
+                    </div>
+
+                    <button class="case-study-btn" data-project="project-1">
+                        Read Case Study
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="project-image">
+                    <img src="image/Screenshot 2026-04-08 132059.png" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3> Construction UI</h3>
+                    <p>Developed a user-friendly interface for a construction company website.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JS</span>
+                    </div>
+                    <div class="project-badge">
+                        🛒 30% faster checkout
+                    </div>
+                    <button class="case-study-btn" data-project="project-2">
+                        Read Case Study
+                    </button>
+                    <!-- ADD PROJECT LINKS WHEN IT IS LIVE -->
+                </div>
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="flip-right" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="image/Screenshot 2026-04-08 135639.png" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>Real Estate Site</h3>
+                    <p>Created a modern website for a real estate startup.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JS</span>
+                    </div>
+                    <div class="project-badge">
+                        🏡 50+ property listings
+                    </div>
+        
+                    <button class="case-study-btn" data-project="project-3">
+                        Read Case Study
+                    </button>
+                    <!-- ADD PROJECT LINKS WHEN IT IS LIVE -->
+                </div>
+            </div>
+
+
+            <!-- Project 4 -->
+            <div class="project-card" data-aos="flip-left" data-aos-delay="300">
+                <div class="project-image">
+                    <img src="image/Screenshot 2026-04-08 133853.png" alt="Project 4">
+                </div>
+                <div class="project-info">
+                    <h3>E‑learning Platform</h3>
+                    <p>Designed a responsive web page for an e-learning platform.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JS</span>
+                    </div>
+                    <div class="project-badge">
+                        🎓 200+ active users
+                    </div>
+                    <button class="case-study-btn" data-project="project-4">
+                        Read Case Study
+                    </button>
+                    <!-- ADD PROJECT LINKS WHEN IT IS LIVE -->
+                </div>
+            </div>
+
+
+            <!-- Project 5 -->
+            <div class="project-card" data-aos="flip-right" data-aos-delay="400">
+                <div class="project-image">
+                    <img src="image/Screenshot 2026-05-28 152123.png" alt="Project 5">
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>Built a personal portfolio website to showcase projects and skills.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JS</span>
+                    </div>
+                    <div class="project-badge">
+                        ✨ 99 Lighthouse score
+                    </div>
+                    <button class="case-study-btn" data-project="project-5">
+                        Read Case Study
+                    </button>
+                    <!-- ADD PROJECT LINKS WHEN IT IS LIVE -->
+                </div>
+            </div>
+        </div>
+        <!-- ADD MORE PROJECTS OR CHANGE THE CURRENT ONES TO THE LATEST ONES -->
+    </section>
+
+    <!-- PROJECT 1 MODAL -->
+    <div class="modal" id="modal-project-1">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Responsive Layout</h2>
+            <div class="tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JS</span>
+            </div>
+            <p>
+                <strong>Context:</strong>
+                The existing site was not mobile-friendly, losing mobile traffic.
+            </p>
+            <p>
+                <strong>My Role:</strong>
+                UI/UX & Front-End Development.
+            </p>
+            <p>
+                <strong>Process:</strong>
+                Built a fluid layout using Flexbox, CSS Grid and Media Queries. Tested across phones, tablets and desktops.
+            </p>
+            <p>
+                <strong>Result:</strong>
+                📱 100% mobile friendly. Improved Lighthouse mobile score from 48 to 98. Increased mobile signups by 25%.
+            </p>
+            <div class="modal-buttons">
+                <a href="videos/Edupro.mp4" target="_blank" class="demo-btn">Watch Demo</a>
+                <a href="https://github.com/casmircodes-frontend/e-learning-site.git" target="_blank" class="github-btn">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 2 MODAL -->
+    <div class="modal" id="modal-project-2">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Construction UI</h2>
+            <div class="tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JS</span>
+            </div>
+            <p>
+                <strong>Context:</strong>
+                Designed a sharp interface for a construction company, enhancing usability and brand presence.
+            </p>
+            <p>
+                <strong>My Role:</strong>
+                Front-End Development & UI Design.
+            </p>
+            <p>
+                <strong>Process:</strong>
+                Built custom components and responsive layouts using modern HTML, CSS, and JavaScript.
+            </p>
+            <p>
+                <strong>Result:</strong>
+                A cleaner, faster interface that improved clarity and user engagement for construction clients.
+            </p>
+            <div class="modal-buttons">
+                <a href="videos/BuildMaster.mp4" target="_blank" class="demo-btn">Watch Demo</a>
+                <a href="https://github.com/casmircodes-frontend/construction-site.git" target="_blank" class="github-btn">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 3 MODAL -->
+    <div class="modal" id="modal-project-3">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Real Estate Site</h2>
+            <div class="tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JS</span>
+            </div>
+            <p>
+                <strong>Context:</strong>
+                Created a polished real estate platform for a startup with modern property search styling.
+            </p>
+            <p>
+                <strong>My Role:</strong>
+                Full front-end implementation & responsive layout.
+            </p>
+            <p>
+                <strong>Process:</strong>
+                Developed a modern landing page with dynamic visuals, strong CTAs, and mobile-first design.
+            </p>
+            <p>
+                <strong>Result:</strong>
+                Delivered a compelling property showcase that feels professional and approachable.
+            </p>
+            <div class="modal-buttons">
+                <a href="videos/RealEstate.mp4" target="_blank" class="demo-btn">Watch Demo</a>
+                <a href="#" class="github-btn">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 4 MODAL -->
+    <div class="modal" id="modal-project-4">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>E-learning Platform</h2>
+            <div class="tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JS</span>
+            </div>
+            <p>
+                <strong>Context:</strong>
+                Designed a responsive course platform for remote learners and educators.
+            </p>
+            <p>
+                <strong>My Role:</strong>
+                UI design, layout structure, and responsive optimization.
+            </p>
+            <p>
+                <strong>Process:</strong>
+                Crafted modular sections, card grids, and interactive navigation to support course discovery.
+            </p>
+            <p>
+                <strong>Result:</strong>
+                A modern learning experience that is easy to scan and mobile-friendly.
+            </p>
+            <div class="modal-buttons">
+                <a href="videos/WebDesign.mp4" target="_blank" class="demo-btn">Watch Demo</a>
+                <a href="#" class="github-btn">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 5 MODAL -->
+    <div class="modal" id="modal-project-5">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Portfolio Website</h2>
+            <div class="tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JS</span>
+            </div>
+            <p>
+                <strong>Context:</strong>
+                Built a personal portfolio site to showcase recent work and skills.
+            </p>
+            <p>
+                <strong>My Role:</strong>
+                End-to-end front-end development and responsive polish.
+            </p>
+            <p>
+                <strong>Process:</strong>
+                Implemented smooth transitions, project cards, and strong typography across all screen sizes.
+            </p>
+            <p>
+                <strong>Result:</strong>
+                A clean portfolio presentation that highlights skills clearly and professionally.
+            </p>
+            <div class="modal-buttons">
+                <a href="" target="_blank" class="demo-btn">Live Demo</a>
+                <a href="#" class="github-btn">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section" id="experience">
+        <h2 class="section-title">Work <span>Experience</span></h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Front-End Developer</h3>
+                    <div class="date">2026 - Present</div>
+                    <p>Freelance · Remote</p>
+                    <p>Building responsive web applications, collaborating with friends to deliver high-quality digital
+                        solutions.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Self-Taught Developer</h3>
+                    <div class="date">2026</div>
+                    <p>Personal Projects</p>
+                    <p>Mastered modern web technologies and built multiple portfolio projects to refine skills.</p>
+                </div>
+            </div>
+        </div>
+        <!-- ADD MORE EXPERIENCE AS YOU PROGRESS AS A DEVELOPER -->
+    </section>
+
+    <section class="section" id="contact">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Let's work together!</h3>
+                <p>Interested in collaborating or have a project in mind ? <br> Reach out directly _ I'll get back to
+                    you
+                    within 24 hours.</p>
+                <div class="contact-details">
+                    <div class="contact-item"><i class="fas fa-envelope"></i>
+                        <p>casmirokeke38@gmail.com</p>
+                    </div>
+                    <div class="contact-item"><i class="fas fa-phone"></i>
+                        <p>+234 816 351 3869</p>
+                    </div>
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i>
+                        <p>Anambra State, Nigeria/Remote</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/casmircodes-frontend" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/casmir-okeke" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/casmircodes" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/casmircodes" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form" data-aos="fade-left">
+                <form id="contactForm" action="https://formspree.io/f/mjgawrzp" method="POST">
+                    <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
+                    <div class="form-group"><input type="email" name="email" placeholder="Your Email" required></div>
+                    <div class="form-group"><textarea name="message" rows="5" placeholder="Your Message"
+                            required></textarea></div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Send Message <i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Casmir</h3>
+                <p>Professional Front-End Developer, creating responsive and modern websites for growing
+                    businesses.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Me</h4>
+                <div class="social-icons">
+                    <a href="https://instagram.com/casmircodes" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/casmir.okeke.920493" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@Casmircodes" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@casmircodes" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Casmir Okeke. All rights reserved. | Casmir's portfolio</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTopBtn"><i class="fas fa-arrow-up"></i></a>
+    <a href="https://wa.me/2348163513869" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"> </script>
+       
+   
+</body>
+
+</html>
