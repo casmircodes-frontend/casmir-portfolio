@@ -180,6 +180,8 @@
          display: flex;
          justify-content: space-between;
          align-items: center;
+         flex-wrap: wrap;
+         gap: 12px;
          box-shadow: var(--navbar-shadow);
      }
 
@@ -193,6 +195,14 @@
          cursor: pointer;
          border-radius: 18px;
          transition: transform 0.3s ease;
+         flex-shrink: 0;
+     }
+
+     .nav-actions {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         z-index: 1100;
      }
 
      /* Invert logo colors when dark mode is active */
@@ -1157,6 +1167,57 @@
          .social-icons {
              justify-content: center;
          }
+
+         .navbar {
+             padding: 10px 4%;
+         }
+
+         .navbar .logo {
+             width: 75px;
+         }
+
+         .navbar ul {
+             display: none;
+         }
+
+         .navbar ul.active {
+             display: flex;
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100vh;
+             background: rgba(10, 10, 10, 0.96);
+             backdrop-filter: blur(16px);
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             gap: 32px;
+             transform: translateY(0);
+             transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.4, 1);
+             z-index: 1050;
+         }
+
+         .navbar ul li a {
+             color: white;
+             font-size: 20px;
+         }
+
+         .hamburger {
+             display: flex;
+         }
+
+         .theme-toggle {
+             display: inline-flex;
+         }
+
+         .nav-actions {
+             margin-left: auto;
+         }
+
+         .section {
+             padding: 65px 6%;
+         }
      }
 
      @media (max-width: 768px) {
@@ -1402,6 +1463,10 @@
      @media (max-width: 600px) {
          body {
              font-size: 14px;
+         }
+
+         section[id], .main {
+             scroll-margin-top: 90px;
          }
 
          .navbar {
