@@ -19,15 +19,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="preloader-active">
 
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <div id="preloader">
+    <div id="preloader" aria-label="Loading" role="status">
         <img src="image/logo.png" alt="Casmir Logo" class="preloader-logo">
         <div class="dots"><span></span><span></span><span></span></div>
     </div>
+    <noscript>
+        <style>
+            #preloader { display: none !important; }
+            .cursor, .cursor-follower { display: none !important; }
+            body.preloader-active { overflow: auto !important; }
+        </style>
+    </noscript>
 
     <header class="main" id="home">
         <nav class="navbar">

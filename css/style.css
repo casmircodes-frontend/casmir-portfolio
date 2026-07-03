@@ -54,6 +54,16 @@
          overflow-x: hidden;
      }
 
+     body.preloader-active {
+         overflow: hidden;
+         min-height: 100vh;
+     }
+
+     body.preloader-active .cursor,
+     body.preloader-active .cursor-follower {
+         display: none;
+     }
+
      /* Custom Cursor (only visible on desktop) */
      .cursor {
          width: 12px;
@@ -154,11 +164,28 @@
          }
      }
 
+     @media (max-width: 600px) {
+         #preloader {
+             padding: 0 16px;
+         }
+
+         .preloader-logo {
+             width: 90px;
+             margin-bottom: 18px;
+         }
+
+         .dots span {
+             width: 12px;
+             height: 12px;
+             margin: 0 4px;
+         }
+     }
+
      /* Main Layout */
      .main {
          width: 100%;
          background: linear-gradient(135deg, #fef9f5 0%, #fff 100%);
-         min-height: 100vh;
+         min-height: auto;
          position: relative;
      }
 
@@ -180,8 +207,8 @@
          display: flex;
          justify-content: space-between;
          align-items: center;
-         flex-wrap: wrap;
-         gap: 12px;
+         flex-wrap: nowrap;
+         gap: 20px;
          box-shadow: var(--navbar-shadow);
      }
 
@@ -202,6 +229,7 @@
          display: flex;
          align-items: center;
          gap: 10px;
+         flex-shrink:0;
          z-index: 1100;
      }
 
@@ -218,9 +246,12 @@
 
      .navbar ul {
          display: flex;
+         align-items: center;
          flex-wrap: wrap;
-         gap: 32px;
+         gap: 18px;
          list-style: none;
+         margin-left:auto
+         
      }
 
      .navbar ul li a {
@@ -306,7 +337,7 @@
          align-items: center;
          width: 86%;
          max-width: 1300px;
-         margin: 40px auto 0 auto;
+         margin: 20px auto 0 auto;
          flex-wrap: wrap;
          gap: 40px;
      }
@@ -434,7 +465,7 @@
 
      .icons {
          width: 86%;
-         margin: 40px auto 30px auto;
+         margin: 30px auto 20px auto;
          display: flex;
          justify-content: center;
          gap: 30px;

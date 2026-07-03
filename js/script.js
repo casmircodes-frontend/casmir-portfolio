@@ -2,13 +2,17 @@
             // Preloader
             const preloader = document.getElementById('preloader');
             const hidePreloader = () => {
-                if (preloader) {
-                    preloader.classList.add('hide-preloader');
-                    setTimeout(() => { if (preloader) preloader.style.display = 'none'; }, 700);
-                }
+                if (!preloader) return;
+                document.body.classList.remove('preloader-active');
+                preloader.classList.add('hide-preloader');
+                setTimeout(() => {
+                    if (preloader) preloader.style.display = 'none';
+                }, 700);
             };
-            window.addEventListener('load', () => setTimeout(hidePreloader, 1300));
-            setTimeout(() => { if (preloader && !preloader.classList.contains('hide-preloader')) hidePreloader(); }, 3200);
+            window.addEventListener('load', () => setTimeout(hidePreloader, 900));
+            setTimeout(() => {
+                if (preloader && !preloader.classList.contains('hide-preloader')) hidePreloader();
+            }, 5000);
 
             // Navbar scroll + back to top
             const navbar = document.querySelector('.navbar');
